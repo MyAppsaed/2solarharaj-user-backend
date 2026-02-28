@@ -2,7 +2,7 @@ const User = require('../models/auth');
 const { AppError } = require('../middlewares/errorHandler');
 const { catchAsync } = require('../middlewares/errorHandler');
 const { createSendToken } = require('../middlewares/auth');
-const bcrypt = require('bcrypt');
+const bcrypt = require('bcryptjs');
 const generateToken = require('../utils/generateToken');
 const sendEmail = require('../utils/mail.util');
 // Register user with phone number and email
